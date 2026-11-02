@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Premium Ultrabook",
+    "if": [
+      "budget_high",
+      "portable",
+      "long_battery"
+    ],
+    "then": "recommend:premium_ultrabook",
+    "priority": 5
+  },
+
+  {
+    "name": "Heavy Workload",
+    "if": [
+      "video_editing",
+      "programming"
+    ],
+    "then": "heavy_processing",
+    "priority": 10
+  },
+
+  {
+    "name": "Need Dedicated GPU",
+    "if": [
+      "gaming"
+    ],
+    "then": "need_gpu",
+    "priority": 10
+  },
+
+  {
+    "name": "Premium Gamingbook",
+    "if": [
+      "need_gpu",
+      "budget_high"
+    ],
+    "then": "recommend:premium_gamingbook",
+    "priority": 5
+  },
+
+  {
+    "name": "Budget Gaming Laptop",
+    "if": [
+      "budget_low",
+      "need_gpu"
+    ],
+    "then": "recommend:budget_gaming_laptop",
+    "priority": 4
+  },
+
+  {
+    "name": "Premium Workstation Laptop",
+    "if": [
+      "heavy_processing",
+      "budget_high"
+    ],
+    "then": "recommend:premium_workstation_laptop",
+    "priority": 5
+  },
+
+  {
+    "name": "Budget Workstation Laptop",
+    "if": [
+      "heavy_processing",
+      "budget_low"
+    ],
+    "then": "recommend:budget_workstation_laptop",
+    "priority": 4
+  },
+
+  {
+    "name": "Basic Chromebook",
+    "if": [
+      "budget_low",
+      "light_processing"
+    ],
+    "then": "recommend:basic_chromebook",
+    "priority": 5
+  },
+
+  {
+    "name": "Deluxe Chromebook Plus",
+    "if": [
+      "light_processing",
+      "portable",
+      "long_battery"
+    ],
+    "then": "recommend:deluxe_chromebook_plus",
+    "priority": 6
+  },
+
+  {
+    "name": "Lenovo Yoga",
+    "if": [
+      "portable",
+      "light_processing"
+    ],
+    "then": "recommend:lenovo_yoga",
+    "priority": 1
+  }
+]
